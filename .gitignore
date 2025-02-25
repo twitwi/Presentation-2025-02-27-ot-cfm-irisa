@@ -1,0 +1,11 @@
+node_modules
+.DS_Store
+dist
+*.local
+.vite-inspect
+.remote-assets
+components.d.ts
+external-images/*.png
+external-images/*.jpg
+external-images/*.svg
+external-images/*.pdf

@@ -1,0 +1,23 @@
+{
+  "name": "slides",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "slidev": {
+    "addons": [
+      "@twitwi/slidev-addon-ultracharger"
+    ]
+  },
+  "dependencies": {
+    "@slidev/cli": "^51.3.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "@twitwi/slidev-addon-ultracharger": "github:twitwi/slidev-addon-ultracharger",
+    "markdown-it-attrs": "^4.3.1",
+    "vue": "^3.5.13"
+  }
+}

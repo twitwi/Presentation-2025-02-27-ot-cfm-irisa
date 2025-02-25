@@ -1,0 +1,128 @@
+
+html.dark .onlyLight { display: none; }
+html.light .onlyDark { display: none; }
+html.dark {
+    .slidev-layout {
+        background: black;
+    }
+    .darkinvert {
+        filter: invert(1);
+    }
+    .patchblack svg{
+        [fill="#000000"] {
+            fill: white;
+        }
+        [stroke="#000000"] {
+            stroke: white;
+        }
+        [fill="#ffffff"] {
+            fill: black;
+        }
+        [stroke="#ffffff"] {
+            stroke: black;
+        }
+    }
+}
+
+.highlight {
+    /* red ok for light and dark modes */
+    color: red !important;/* lch(50% 70 30);*/
+}
+iframe {
+    &.titleonly {
+        width: 100%;
+        height: 430px;
+    }
+    &.onlyiframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+h3 {
+    margin: .3em 0 .2em;
+}
+footer {
+    opacity: 0.35;
+}
+.nicebox {
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    box-shadow: 0 0 5px rgba(255,255,255,1);
+    html.dark & {
+        background: #333;
+        border-color: #666;
+        box-shadow: 0 0 5px rgba(0,0,0,1);
+    }
+}
+
+.slidev-layout:not(.cover) {
+    h1 {
+        color: #4f46e5;
+    }
+    h2 {
+        color: #059669;
+        margin-bottom: 1em;
+    }
+    .katex {
+        margin: 0.2em;
+    }
+    .footnotes {
+        font-size: 0.7em;
+    }
+}
+
+
+
+.toc-slide {
+    --pad: 10px;
+    padding-top: calc(var(--pad) + 90px);
+}
+
+.toc-slide .logos {
+    display: block;
+    position: absolute;
+    top: var(--pad);
+    left: var(--pad);
+    /* NB right not working...
+    right: var(--pad);
+    */
+    width: calc(100% - 2*var(--pad));
+}
+
+.slidev-page-1 {
+    h1 {
+        margin-top: -1em;
+    }
+    .logos {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        &.dark {
+            background: rgba(0,0,0, 0.85);
+        }
+    }
+}
+
+.slidev-layout.default:has(h1) {
+    h1 {
+        text-align: center;
+        margin-top: 0;
+    }
+}
+
+
+
+/*
+.slidev-presenter>.layout1 {
+    grid-template-columns: 1fr 0 !important;
+    >:nth-child(2), >:nth-child(3) {
+        display: none;
+    }
+}
+*/
