@@ -48,6 +48,7 @@ src: pages/overview.md
 - I won't cover advanced approaches
 - Focus: understanding the concepts
 
+ CFM [Blogpost](https://dl.heeere.com/cfm/) (ICLR Blogpost track) and CFM playground
 
 ---
 
