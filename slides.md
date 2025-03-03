@@ -406,7 +406,7 @@ z_0 &\sim \mathcal{N}(0, I) \\
 z_1 &\sim Dataset \\
 t & \sim Uniform([0, 1]) \\
 x & = t\cdot z_1 + (1-t) \cdot z_0 \\
-\text{SGD step» on $θ$ with loss:  } &  || u_θ(x, t) - (z_1 - z_0) ||_2^2
+\text{SGD step on $θ$ with loss:  } &  || u_θ(x, t) - \frac{z_1 - z_0}{1-t} ||_2^2
 \end{align*}
 $$
 
@@ -484,13 +484,13 @@ $$u(x,t)  = E_{z|x, t}[u^{cond}(x,t,z)]$$
 (also written as)
 
 $$\forall \, t, \forall \, x,$$
-$$u = E_z\left[\frac{u^{cond}(x,t,z) p(x,t|z) } {p(x,t)}\right]$$
+$$u(x,t) = \int_z u^{cond}(x,t,z) p(z|x,t) $$
 
 <st/>
-(or)
+(or bayes)
 
 $$\forall \, t, \forall \, x,$$
-$$u = E_z\left[\frac{u^{cond}(x,t,z) p(x,t|z) } {p(x,t)}\right]$$
+$$u(x,t) = \int_z u^{cond}(x,t,z) \frac{p(x,t|z)p(z)}{p(x,t)} = E_z\left[\frac{u^{cond}(x,t,z) p(x,t|z) } {p(x,t)}\right]  = E_z\left[\frac{u^{cond}(x,t,z) p(x,t|z) } {\sum_{z'}p(x,t|z')p(z')}\right]$$
 
 
 ---
