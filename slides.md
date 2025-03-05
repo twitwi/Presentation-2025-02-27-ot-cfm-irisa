@@ -80,7 +80,7 @@ try to recover $p(X)$
 
 ## <w>Principal Components Analysis</w> (PCA)
 
-<img class="darkinvert m-auto w-300px mt--3em float-right" src="/media/pca.png"/>
+<img class="darkinvert m-auto w-300px mt--3em float-right" src="./media/pca.png"/>
 
 Find an orthogonal subspace (lower dimension)\
 maximizing the captured variance\
@@ -89,7 +89,7 @@ i.e. minimizing the reconstruction error
 
 $$\argmin_{\{z_i\}_i, W} \sum_i || x_i - W z_i ||_2^2$$
 
-<img v-click class="darkinvert m-auto" src="/media/eigenfaces.png"/>
+<img v-click class="darkinvert m-auto" src="./media/eigenfaces.png"/>
 
 ---
 layout: anim
@@ -99,7 +99,7 @@ class: text-center
 
 ## Aside: PCA as Wasserstein Minimizer + 1-Barycenter
 
-<InlineSvg wrap class="float-right w600px m-auto patchblack" src="/media/mlot-pca-wassertein.svg" />
+<InlineSvg wrap class="float-right w600px m-auto patchblack" src="./media/mlot-pca-wassertein.svg" />
 
 $$\argmin_{\{z_i\}_i, W} \sum_i || x_i - W z_i ||_2^2$$
 
@@ -131,7 +131,7 @@ $$P_\theta(X,...) = \prod_{var} P_\theta(var | parents(var))$$
 
 ::right::
 
-<InlineSvg wrap class="patchblack" src="/media/vltamm-model.svg"/>
+<InlineSvg wrap class="patchblack" src="./media/vltamm-model.svg"/>
 
 ---
 
@@ -225,7 +225,7 @@ layout: anim
 
 ## Normalizing Flows
 
-<InlineSvg wrap class="patchblack m-auto w-700px" src="/media/T_theta_pushforward.svg"/>
+<InlineSvg wrap class="patchblack m-auto w-700px" src="./media/T_theta_pushforward.svg"/>
 
 Definition (push-forward): if $x \sim p_0$ then $T(x) \sim T_{\#}p_0$ <s0/>
 
@@ -242,7 +242,7 @@ layout: anim
 
 ## Normalizing Flows, with composed functions
 
-<InlineSvg wrap class="patchblack m-auto w-700px" src="/media/T_theta_pushforward_phis.svg"/>
+<InlineSvg wrap class="patchblack m-auto w-700px" src="./media/T_theta_pushforward_phis.svg"/>
 <s0/>
 
 Learn a deep $T$, i.e.,
@@ -262,10 +262,10 @@ Principle: compose invertible blocks (with easy jacobian det)
 ## Continuous Normalizing Flows
 
 <v-switch>
-<template #1><InlineSvg wrap class="patchblack m-auto w-700px pt-12px" src="/media/T_theta_pushforward.svg"/></template>
-<template #2><InlineSvg wrap class="patchblack m-auto w-700px pt-12px" src="/media/T_theta_pushforward_phis.svg"/></template>
-<template #3><InlineSvg wrap class="patchblack m-auto w-700px" src="/media/T_theta_pushforward_continuous.svg"/></template>
-<template #5><InlineSvg wrap class="patchblack m-auto w-700px" src="/media/T_theta_pushforward_continuous_reverse.svg"/></template>
+<template #1><InlineSvg wrap class="patchblack m-auto w-700px pt-12px" src="./media/T_theta_pushforward.svg"/></template>
+<template #2><InlineSvg wrap class="patchblack m-auto w-700px pt-12px" src="./media/T_theta_pushforward_phis.svg"/></template>
+<template #3><InlineSvg wrap class="patchblack m-auto w-700px" src="./media/T_theta_pushforward_continuous.svg"/></template>
+<template #5><InlineSvg wrap class="patchblack m-auto w-700px" src="./media/T_theta_pushforward_continuous_reverse.svg"/></template>
 </v-switch>
 
 <div v-click="3" class="float-left w-42%">
@@ -292,13 +292,13 @@ Forward and reverse ODE
 
 ## Continuous Normalizing Flows: visual summary
 
-<iframe class="titleonly darkinvert m-auto h-360px! w-360px!" src="/ot-flow-1d.html#loop1" frameborder="0" scrolling="no"></iframe>
+<iframe class="titleonly darkinvert m-auto h-360px! w-360px!" src="ot-flow-1d.html#loop1" frameborder="0" scrolling="no"></iframe>
 
 ---
 
 ## Continuous Normalizing Flows: "limitation"
 
-<iframe class="titleonly darkinvert m-auto h-360px! w-360px!" src="/ot-flow-1d.html#loop3" frameborder="0" scrolling="no"></iframe>
+<iframe class="titleonly darkinvert m-auto h-360px! w-360px!" src="ot-flow-1d.html#loop3" frameborder="0" scrolling="no"></iframe>
 
 <p class="text-center">
 The flow is unspecified!<br/> (there is an infinity of equally good solutions)
@@ -308,7 +308,7 @@ The flow is unspecified!<br/> (there is an infinity of equally good solutions)
 
 ## Probability paths, velocity fields (and flows)
 
-<iframe class="darkinvert titleonly" src="/ot-flow-1d.html"></iframe>
+<iframe class="darkinvert titleonly" src="ot-flow-1d.html"></iframe>
 <video src="./media/traj.mp4" style="position: absolute; left: 30px; bottom: 50px; width: 125px;" autoplay loop onclick="this.controls = true"></video>
 <img src="./media/trifecta.svg" class="darkinvert" style="position: absolute; top: 20px; right: 20px; width: 280px;"/>
 
@@ -361,7 +361,7 @@ background: external-images/2025-02-24-wave3.jpg
 <div class="flex" style="--ar: calc(218 / 161)">
     <iframe class="darkinvert" style="aspect-ratio: 1; width: calc(100% / ( 1 + 2 * var(--ar)));" src="ot-flow-1d.html#loop9" frameborder="0" scrolling="no"></iframe>
     <img class="darkinvert mt--100px" style="vertical-align: top; width: calc(100% * var(--ar) / ( 1 + 2 * var(--ar)));" src="./media/pbackground.svg">
-    <iframe class="darkinvert" style="aspect-ratio: var(--ar); margin: -50px -5px 0; width: calc(100% * var(--ar) / ( 1 + 2 * var(--ar)));" src="/u-anim.html" frameborder="0" scrolling="no"></iframe>
+    <iframe class="darkinvert" style="aspect-ratio: var(--ar); margin: -50px -5px 0; width: calc(100% * var(--ar) / ( 1 + 2 * var(--ar)));" src="u-anim.html" frameborder="0" scrolling="no"></iframe>
 </div>
 
 <img class="darkinvert" src="./media/trifecta.svg" v-drag="[352,304,458,233]" />
@@ -419,7 +419,7 @@ That's it! *(up to practical hacks and a few days of training)*
 
 ## CFM: Does it works? the "inversion", path un-mixing
 
-<iframe class="titleonly darkinvert m-auto h-400px! w-400px!" src="/cfm-1d.html#inter1" frameborder="0" scrolling="no"></iframe>
+<iframe class="titleonly darkinvert m-auto h-400px! w-400px!" src="cfm-1d.html#inter1" frameborder="0" scrolling="no"></iframe>
 
 ---
 
@@ -510,7 +510,7 @@ h2 { margin: -1em 0 0 2em; position: relative; z-index: 10; }
 
 ## CFM playground
 
-<iframe class="onlyiframe darkinvert" style="--w: 600; --h: 800; width: 100%;" src="/cfm-1d.html#playground" frameborder="0" scrolling="no"></iframe>
+<iframe class="onlyiframe darkinvert" style="--w: 600; --h: 800; width: 100%;" src="cfm-1d.html#playground" frameborder="0" scrolling="no"></iframe>
 
 
 ---
@@ -636,7 +636,7 @@ h2 { margin: -1em 0 0 2em; position: relative; z-index: 10; }
 
 ## CFM [Blogpost](https://dl.heeere.com/cfm/) (ICLR Blogpost track) and CFM playground
 
-<iframe class="onlyiframe darkinvert" style="--w: 600; --h: 800; width: 100%;" src="/cfm-1d.html#playground" frameborder="0" scrolling="no"></iframe>
+<iframe class="onlyiframe darkinvert" style="--w: 600; --h: 800; width: 100%;" src="cfm-1d.html#playground" frameborder="0" scrolling="no"></iframe>
 
 
 ---
