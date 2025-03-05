@@ -350,7 +350,7 @@ src: pages/overview.md
 
 ---
 layout: cover
-background: external-images/2025-02-24-wave3.jpg
+background: ./external-images/2025-02-24-wave3.jpg
 ---
 
 # Conditional Flow Matching (CFM)
@@ -643,7 +643,7 @@ h2 { margin: -1em 0 0 2em; position: relative; z-index: 10; }
 ---
 routeAlias: end
 src: pages/title.md
-background: external-images/2025-02-24-landscape1-03.jpg
+background: ./external-images/2025-02-24-landscape1-03.jpg
 class: thanks
 ---
 ## Thanks

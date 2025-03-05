@@ -7,8 +7,8 @@ class: toc-slide
 
 <TocNG :max-depth="1" />
 
-<img src="/media/logo-bar-inria-iogs.svg" class="logos onlyLight" />
-<img src="/media/logo-bar-inria-iogs-darkbg.svg" class="logos onlyDark" />
+<img src="./media/logo-bar-inria-iogs.svg" class="logos onlyLight" />
+<img src="./media/logo-bar-inria-iogs-darkbg.svg" class="logos onlyDark" />
 
 <!--
 - quick story on generative models
