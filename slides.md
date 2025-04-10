@@ -100,7 +100,7 @@ class: text-center
 
 ## Aside: PCA as Wasserstein Minimizer + 1-Barycenter
 
-<InlineSvg wrap class="float-right w600px m-auto patchblack" src="./media/mlot-pca-wassertein.svg" />
+<InlineSvg2 wrap class="float-right w600px m-auto patchblack" src="./media/mlot-pca-wassertein.svg" />
 
 $$\argmin_{\{z_i\}_i, W} \sum_i || x_i - W z_i ||_2^2$$
 
@@ -132,7 +132,7 @@ $$P_\theta(X,...) = \prod_{var} P_\theta(var | parents(var))$$
 
 ::right::
 
-<InlineSvg wrap class="patchblack" src="./media/vltamm-model.svg"/>
+<InlineSvg2 wrap class="patchblack" src="./media/vltamm-model.svg"/>
 
 ---
 
@@ -226,7 +226,7 @@ layout: anim
 
 ## Normalizing Flows
 
-<InlineSvg wrap class="patchblack m-auto w-700px" src="./media/T_theta_pushforward.svg"/>
+<InlineSvg2 wrap class="patchblack m-auto w-700px" src="./media/T_theta_pushforward.svg"/>
 
 Definition (push-forward): if $x \sim p_0$ then $T(x) \sim T_{\#}p_0$ <s0/>
 
@@ -243,7 +243,7 @@ layout: anim
 
 ## Normalizing Flows, with composed functions
 
-<InlineSvg wrap class="patchblack m-auto w-700px" src="./media/T_theta_pushforward_phis.svg"/>
+<InlineSvg2 wrap class="patchblack m-auto w-700px" src="./media/T_theta_pushforward_phis.svg"/>
 <s0/>
 
 Learn a deep $T$, i.e.,
@@ -263,10 +263,10 @@ Principle: compose invertible blocks (with easy jacobian det)
 ## Continuous Normalizing Flows
 
 <v-switch>
-<template #1><InlineSvg wrap class="patchblack m-auto w-700px pt-12px" src="./media/T_theta_pushforward.svg"/></template>
-<template #2><InlineSvg wrap class="patchblack m-auto w-700px pt-12px" src="./media/T_theta_pushforward_phis.svg"/></template>
-<template #3><InlineSvg wrap class="patchblack m-auto w-700px" src="./media/T_theta_pushforward_continuous.svg"/></template>
-<template #5><InlineSvg wrap class="patchblack m-auto w-700px" src="./media/T_theta_pushforward_continuous_reverse.svg"/></template>
+<template #1><InlineSvg2 wrap class="patchblack m-auto w-700px pt-12px" src="./media/T_theta_pushforward.svg"/></template>
+<template #2><InlineSvg2 wrap class="patchblack m-auto w-700px pt-12px" src="./media/T_theta_pushforward_phis.svg"/></template>
+<template #3><InlineSvg2 wrap class="patchblack m-auto w-700px" src="./media/T_theta_pushforward_continuous.svg"/></template>
+<template #5><InlineSvg2 wrap class="patchblack m-auto w-700px" src="./media/T_theta_pushforward_continuous_reverse.svg"/></template>
 </v-switch>
 
 <div v-click="3" class="float-left w-42%">
