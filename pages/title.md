@@ -16,7 +16,7 @@ background: ./external-images/2025-02-24-landscape1-01.jpg
 </p>
 
 <div style="position: absolute; left:0; bottom:0; right:0; padding: .5em 5em; background: rgba(0 0 0 / 0.75)">
-<img src="./media/logo-bar-inria-iogs-darkbg.svg" class="logos dark"/>
+<img src="../media/logo-bar-inria-iogs-darkbg.svg" class="logos dark"/>
 </div>
 
 
